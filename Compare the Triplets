@@ -1,0 +1,36 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main()
+{
+    int a[3],b[3],ar[2]={0,0};
+    for (int i=0;i<3;i++)
+    {
+        cin>>a[i];
+    }
+    for (int i=0;i<3;i++)
+    {
+        cin>>b[i];
+    }
+    if(a[0]>b[0]) {
+        ar[0]++;
+    }
+    else if(a[0]<b[0]) {
+        ar[1]++;
+    }
+    if(a[1]>b[1]) {
+        ar[0]++;
+    }
+    else if(a[1]<b[1]) {
+        ar[1]++;
+    }
+    if(a[2]>b[2]) {
+        ar[0]++;
+    }
+    else if(a[2]<b[2]) {
+        ar[1]++;
+    }
+    cout<<ar[0]<<" "<<ar[1];
+    return 0;
+}
