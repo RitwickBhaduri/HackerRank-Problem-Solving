@@ -1,0 +1,27 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main()
+{
+    int n,scores,hs=0,ls=0,h=0,l=0;
+    cin>>n;
+    cin>>hs;
+    ls=hs;
+    for (int i=1;i<n;i++)
+    {
+        cin>>scores;
+        if(scores>hs)
+        {
+            hs=scores;
+            h++;
+        }
+        if(scores<ls)
+        {
+            ls=scores;
+            l++;
+        }
+    }
+    cout<<h<<" "<<l;
+    return 0;
+}
