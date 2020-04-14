@@ -1,0 +1,29 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main()
+{
+    int s,t,a,b,m,n,d,app=0,orr=0;
+    cin>>s>>t>>a>>b>>m>>n;
+    for(int i=0;i<m;i++)
+    {
+        cin>>d;
+        int x=a+d;
+        if(x>=s&&x<=t)
+        {
+            app++;
+        }
+    }
+    for(int i=0;i<n;i++)
+    {
+        cin>>d;
+        int x=b+d;
+        if(x>=s&&x<=t)
+        {
+            orr++;
+        }
+    }
+    cout<<app<<endl<<orr;
+    return 0;
+}
