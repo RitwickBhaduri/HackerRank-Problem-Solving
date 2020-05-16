@@ -1,0 +1,23 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main()
+{
+    int n,p,ts,te;
+    cin>>n>>p;
+    if(p<=n)
+    {
+        if (n%2==1)
+        {
+            n--;
+        }
+        if (p%2==1)
+        {
+            p--;
+        }
+        ts=p/2;
+        te=(n-p)/2;
+        (ts<te)?cout<<ts:cout<<te;
+    }
+}
